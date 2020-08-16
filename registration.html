@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>REMLAD DATA PLUG -REGISTER</title>
+<link rel="stylesheet" type="text/css" href="cssregistration.css"/>
+</head>
+<body>
+<div class=container>
+
+  <div class="sub-container">
+    <img src="images2.jpg" alt=images2 >
+  </div>
+<div class="general">
+<form action="./registration.html" method="get">
+<h3> CREATE AN ACCOUNT</h3>
+
+
+<input type="email" name="email" required placeholder="Enter Your Email Address" id="email"/>
+
+
+<input type="text"  name="First Name" id= "firstName"  placeholder="First name" minlength="2" maxlength="12"  />
+<!-- label for should be attached with an id attribute-->
+<!-- both id and name must have the same value. same as the label for=-->
+
+
+<input  type="text" name="last Name"  id="lastName"  placeholder="Last Name" minlength="2" maxlength="12"  />
+
+
+<input  type="text" name="Username" pattern="[a-zA-Z0-9]+"  placeholder="Username" id="Username" minlength="6" maxlength="10"  />
+<!-- the pattern attribute ensures that only letters are inputed it limit usernames to only letters and numbers (and not special characters like ! or @).-->
+
+<input  type="number"  name="Phone Number" id="phoneNumber"placeholder=" Enter Your phone Number" max-maxlength="15"  />
+
+
+<input type="password"  name="Password" minlength="8" maxlength="20" placeholder="Enter Your Password" id="password" required  />
+
+
+<input type="password" name= "Confirm Password" id="confirmPassword"placeholder="Confirm Your Password"  minlength="8" maxlength="20" required />
+
+<input  type="submit" id="register" name="register" value="Register" >
+<p>Already a member? Click <a href="./logininterface.html">here</a> to login.</p>
+</div>
+<div style="clear:left;"> </div>
+</div>
+</body>
+</html>
